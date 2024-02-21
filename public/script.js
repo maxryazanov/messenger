@@ -22,7 +22,7 @@ function sendMessage() {
 }
 
 // Подключение к вебсокету
-const socket = new WebSocket("ws://localhost:3000");
+const socket = new WebSocket("ws://messenger-gamma-tawny.vercel.app:3000");
 
 socket.onmessage = (event) => {
   const chatMessages = document.getElementById("chat-messages");
