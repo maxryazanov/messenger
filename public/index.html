@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #chat-container {
+  max-width: 400px;
+  margin: 50px auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: gray;
+  padding: 10px;
+}
+
+#chat-messages {
+  height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 2px;
+}
+
+#message-input {
+  width: 70%;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+.my-message {
+  margin-left: 49%;
+  margin-bottom: 3px;
+  max-width: 50%;
+  background-color: #ccc;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: right;
+  color: black; 
+}
+
+.other-message {
+  margin-bottom: 3px;
+  max-width: 50%;
+  background-color: #ccc;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: left;
+  color: red; 
+}
+
+  </style>
+  <title>Простой мессенджер</title>
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-messages"></div>
+    <input type="text" id="message-input" placeholder="Введите сообщение...">
+    <button onclick="sendMessage()">Отправить</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
